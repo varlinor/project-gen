@@ -1,0 +1,44 @@
+{
+  "name": "@varlinor/project-gen",
+  "version": "0.1.0",
+  "description": "generator base project skeleton",
+  "main": "bin/project-gen.js",
+  "bin": {
+    "project-gen": "bin/project-gen"
+  },
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "node bin/project-gen.js --cli -G -E test/testa",
+    "build": "rollup -c"
+  },
+  "keywords": [
+    "generator",
+    "gen",
+    "build",
+    "builder",
+    "project",
+    "generator",
+    "project",
+    "builder",
+    "skeleton"
+  ],
+  "author": "George Shen (varlinor@hotmail.com)",
+  "license": "MIT",
+  "dependencies": {
+    "chalk": "^4.1.0",
+    "commander": "^6.0.0",
+    "promise": "^8.1.0",
+    "shelljs": "^0.8.4"
+  },
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^15.0.0",
+    "@rollup/plugin-json": "^4.1.0",
+    "@rollup/plugin-node-resolve": "^9.0.0",
+    "eslint": "^7.5.0",
+    "eslint-config-airbnb-base": "^14.2.0",
+    "eslint-plugin-import": "^2.22.0",
+    "rollup": "^2.26.5"
+  }
+}
